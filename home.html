@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Management System</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+ #frm{
+	width:500px;
+	margin:auto;
+	margin-top:100px;
+	}
+	marquee{
+	margin-top:10px;}
+</style>
+</head>
+<body class="container-fluid">
+<marquee class="text-primary"><h2>FILL FORM</h2></marquee>
+    <form action="ProjectServlet" method="post" class="form card" id="frm">
+      <h1 class="bg-danger text-white card-header">Project Management System</h1>
+      <table class="table table-hover">
+      <tr>
+      <td>Name of project</td>
+      <td><input type="text" name="projName" required></td>
+      </tr>
+      <tr>
+      <td>Subject</td>
+      <td><input type="text" name="subject" required></td>
+      </tr>
+      <tr>
+      <td>Roll No</td>
+      <td><input type="text" name="rollno" required></td>
+      </tr>
+       <tr>
+      <td>Project Description</td>
+      <td><input type="text" name="projectDescription"></td>
+      </tr>
+      <tr class="card-footer">
+      <td ><button type="submit" class="btn btn-outline-success">Add</button></td>
+      <td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+      </tr>
+      </table>
+    </form>
+    
+    <a  href="ProjectSevlet?action=viewProjects">View Projects</a>
+</body>
+</html>
